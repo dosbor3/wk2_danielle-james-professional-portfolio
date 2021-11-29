@@ -25,8 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;    
-    top: 0;      
-    z-index: 9999;
+    top: 0;   
 }
 
 
@@ -69,15 +68,19 @@ header nav ul li a {
 
 /* HERO STYLES START */
 .hero {
-    background-image: url("../images/Hero\ section\ of\ portfolio.jpg");    
+    background-image: url("../images/hero-bg.jpg");    
     background-size: cover;
     background-position: center; 
-    padding: 80px auto;
     display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    align-items: flex-end; 
-    background-attachment: fixed;
+    justify-content: right;    
+    align-items: flex-end;     
     background-position: 80%;
+    height: 200px;
     
+}
+
+.hero h2 {
+    background-color: var(--teal);
+    padding: 10px;
+    margin: 20px;
 }
