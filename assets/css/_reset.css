@@ -37,9 +37,6 @@ header h1 {
     justify-content: start; 
     color: var(--charcoal);
     text-decoration: none;
-    padding: 5px;
-    padding-left: 35px;
-
 }
 
 header a{
@@ -88,58 +85,16 @@ header nav ul li a {
 }
 /* HERO STYLES END */
 
-/* TITLE SECTIONS STYLES START */
+/* SECTION TITLE STYLES START */
 .title-sections {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
 }
-
-.title-sections h2 {
-    font-family: Arial, Helvetica, sans-serif;
+.section-title {
     font-size: 48px;
     color: var(--gray);    
-    border-right: 4px solid;        
-    margin: auto 15px;
-    padding: 0 10px 25px 40px;
-    text-align: right;
-    margin-bottom: 30px;       
- }
- /* TITLE SECTIONS STYLES END */
-
- /* UTILITY CLASSES STYLES START */
-.flex-row {
-    display: flex;    
-    align-items: flex-start; 
-    flex-direction: row;       
-    justify-content: space-between;         
+    border-right: 3px solid;
+    /*padding-bottom: 20px;*/
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 15%;    
 }
- /* UTILITY CLASSES STYLES END */
-
-/* ABOUT ME STYLES START */
- .about-me p {
-    color: var(--gray);
-    font-size: 16px;    
-    margin: 0 0 10px 0;     
-    text-align: left;  
-    line-height: 1.5em;
- }
-/* ABOUT ME STYLES END */
-
-/* WORK ME STYLES START */
- .work h2 {
-     padding-left: 65px;
-     padding-right: 5px;
-     margin-right: 0;
- }
-/* WORK STYLES END */
- 
-
-
- 
-
-
-
-
