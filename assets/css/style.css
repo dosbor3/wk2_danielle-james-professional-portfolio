@@ -20,31 +20,29 @@ body {
 
 /* HEADER & NAV STYLES START */
 header {
-    padding: 40px 35px;
+    padding: 40px 35px 10px 35px;
     background-color: var(--charcoal);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;    
-    top: 0;   
+    top: 0;       
 }
 
 
 header h1 {
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;    
     font-size: 36px;    
     text-align: right;
     background-color: var(--teal);
     justify-content: start; 
     color: var(--charcoal);
     text-decoration: none;
-    padding: 5px;
-    padding-left: 35px;
-
+    padding: 5px 5px 5px 45px;    
 }
 
 header a{
     text-decoration: none;
-    color:var(--charcoal);
+    color:var(--charcoal);    
 }
 
 header nav {
@@ -98,7 +96,7 @@ header nav ul li a {
 }
 
 .title-sections h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;    
     font-size: 48px;
     color: var(--gray);    
     border-right: 4px solid;        
@@ -111,10 +109,11 @@ header nav ul li a {
 
  /* UTILITY CLASSES STYLES START */
 .flex-row {
-    display: flex;    
+    display: inline-flex;    
+    justify-content: space-between;
     align-items: flex-start; 
     flex-direction: row;       
-    justify-content: space-between;         
+            
 }
  /* UTILITY CLASSES STYLES END */
 
@@ -122,18 +121,39 @@ header nav ul li a {
  .about-me p {
     color: var(--gray);
     font-size: 16px;    
-    margin: 0 0 10px 0;     
+    margin: 0 0 10px 15px;     
     text-align: left;  
-    line-height: 1.5em;
+    line-height: 1.5;
  }
 /* ABOUT ME STYLES END */
 
 /* WORK ME STYLES START */
+
+.work section {
+    border-left: 4px solid;
+}
+
+.work h2 {
+    border-right: 0;
+}
+
  .work h2 {
      padding-left: 65px;
      padding-right: 5px;
      margin-right: 0;
  }
+
+ .work-img-1 {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;    
+    flex: 9999 80%;
+    max-width: 100%;
+ }
+ .work-img-1 h3{
+    flex: 9998 100%;
+}
 /* WORK STYLES END */
  
 
