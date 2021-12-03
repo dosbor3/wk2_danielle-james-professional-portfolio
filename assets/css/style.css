@@ -32,7 +32,7 @@ header {
 header h1 {
     font-family: Arial, Helvetica, sans-serif;    
     font-size: 36px;    
-    text-align: right;
+    text-align: left;
     background-color: var(--teal);
     justify-content: start; 
     color: var(--charcoal);
@@ -127,33 +127,48 @@ header nav ul li a {
  }
 /* ABOUT ME STYLES END */
 
-/* WORK ME STYLES START */
+/* WORK STYLES START */
 
 .work section {
     border-left: 4px solid;
 }
 
-.work h2 {
-    border-right: 0;
-}
+ .work h3 {
+    display:inline-flex; 
+    border-right: 0;     
+    padding-right: 5px;
+    margin-right: 0;
+    justify-content: center;
+ }
 
- .work h2 {
-     padding-left: 65px;
-     padding-right: 5px;
-     margin-right: 0;
+ .work-img {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;         
  }
 
  .work-img-1 {
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: center;    
     flex: 9999 80%;
     max-width: 100%;
+    justify-content: center;
+    margin-bottom: 35px;
  }
- .work-img-1 h3{
-    flex: 9998 100%;
-}
+
+ .work-img-2 .work-img-3 {
+    flex: 9 100%;
+    max-width: 50%;
+    justify-content: space-between;
+    align-items: flex-start;   
+ }
+
+ .work-img-4 .work-img-5 {
+    flex: 8 100%;
+    max-width: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+
+ 
 /* WORK STYLES END */
  
 
