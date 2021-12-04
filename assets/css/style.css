@@ -51,7 +51,8 @@ header h1 {
     font-family: var(--verdana);    
     font-size: 36px;    
     text-align: left;
-    justify-content: start;   
+    justify-content: start;
+    text-shadow: 5px 10px 15px var(--viola);   
     padding: 5px 5px 5px 45px;    
 }
 
@@ -71,6 +72,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-shadow: 5px 10px 15px var(--pink);
 }
 
 header nav ul li a {
@@ -135,7 +137,8 @@ header nav ul li a {
     justify-content: center;
     text-align: right;
     padding: 25px; 
-    width: max-content;   
+    width: max-content;
+    text-shadow: 5px 10px 15px var(--aqua);  
  }
 /* SECTIONS STYLES END*/
 
@@ -165,24 +168,26 @@ header nav ul li a {
 }
 
 .work-images {
-     display: flex;
-     justify-content: space-between;     
-     flex-wrap: wrap;     
-     margin: 0 20px;
- }
+    position: relative;
+    display: flex;          
+    flex-wrap: wrap;
+    justify-content: space-around;     
+    margin: 0 20px;
+}
  
  .img-and-caption {
-     padding: 25px;     
+    padding: 25px;     
  }
  
  .img-and-caption img {
-     border: 5px solid var(--smalt);
-     width: 750px;
-     height: 300px;
-     opacity: 0.83;
- }
+    border: 5px solid var(--smalt);
+    width: 650px;
+    height: 300px;
+    opacity: 0.83;
+    border-radius: 15px;
+}
 
-  div .caption { /* WHAT IS THE PROPER SYNTAX */
+div .caption { /* WHAT IS THE PROPER SYNTAX */
     z-index: 2;
     position: relative;
     width: 25%;
@@ -190,29 +195,38 @@ header nav ul li a {
     color:var(--charcoal);
     text-align: left;
     background-color: var(--teal);    
-  } 
+}
+  
+.flex-img img {
+    width: 950px;
+    height: 300px;
+    flex: 9999 100%;
+}
 
-  .flex-img {
-      flex: 9999 100%;
-  }
+.caption {
+    position: relative;
+    bottom: 0;
+
+    
+}
 /* WORK STYLES END */
-
+  
 /* CONTACT ME STYLES START */
 .contact-me {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 25px;
+    justify-content: flex-start;
 }
 
 #contact-me h2 {
     font-size: 35px;       
-    text-align: right;
-    padding-right: 67px;    
+    text-align: right; 
+    padding-right: 93px;
 }
 
 .contact-links ul {
-    display: flex;   
+    display: flex;
+    padding-left: 93px;    
     width: 100%;    
 }
 
@@ -229,8 +243,7 @@ header nav ul li a {
     font-size: 24px;
     font-family: var(--verdana);
     font-weight: bold;
-}
-    
+}    
 /* CONTACT ME STYLES END */
 
 /* PSEUDO CLASSES START */
@@ -240,9 +253,77 @@ header nav ul li a {
 }
 /* PSEUDO CLASSES END */
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header h1 a {
+      /* this will be applied on any screen smaller than 980px */
+      color: var(--pink);
+    }
 
- 
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+      font-size: 80px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header {
+        width: 100%;
+    }
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+      font-size: 100px;
+    }
 
+    p {
+        flex: 100%;
+    }
+
+    .employee-info {
+        padding: 30px 15px;
+    }
+
+    .hero {
+      width: 100%;
+    }
+  
+    .employee-info {
+      width: 95%;
+    }   
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  }
 
  
 
