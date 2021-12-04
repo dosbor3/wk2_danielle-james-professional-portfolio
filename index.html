@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Danielle James Portfolio</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
+        <!-- header section-->
         <header>
             <h1 class="employee">
-                <a href="/wk2_danielle-james-professional-portfolio/index.html">Danielle James</a>
+                <a href="/">Danielle James</a>
             </h1>
             <nav>
                 <ul>
@@ -27,78 +28,100 @@
                 </ul>
             </nav>
         </header>
+
         <!-- hero Section -->
         <section class="hero">
             <h2>Full Stack Developer</h2>
         </section>
 
-        <!-- title sections-->
-        <section class="title-sections">
-
-            <section class= "about-me flex-row">  <!-- about me section-->
-            <div>
-                <h2>
-                    About Me
-                </h2>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt saepe qui dolore,
-                    animi, quasi dicta delectus, aliquam voluptatibus placeat sapiente quo et ipsam iure
-                    vero non beatae numquam neque libero.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam voluptatum 
-                    adipisci ipsum temporibus voluptate corporis laudantium, reprehenderit laboriosam quam
-                    illo perferendis eaque excepturi dicta quibusdam, quo dolorem suscipit ducimus!
-                </p>
-            </div>
+        <!-- employee info section -->
+        <section class="employee-info"> <!-- container to hold the about me, work, and contact sections-->
+           
+            <!-- About me section -->
+            <section id="about-me" class="about-me sections">
+                <div class="h2-header"> <!-- h2 Heading for about me section -->
+                    <h2>About Me</h2>
+                </div>
+                <div class="left-border">  <!-- div to hold bio paragraphs -->
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis accusantium 
+                        reprehenderit excepturi dolorum natus magni ullam animi vero sed modi repellat, 
+                        impedit dicta magnam nihil quod obcaecati qui alias ipsa.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci rem, quia, nisi 
+                        eaque fuga corporis ipsam deleniti doloribus odio esse quasi cupiditate dicta tenetur 
+                        error dignissimos doloremque, laboriosam necessitatibus vero!
+                    </p>
+                </div>
             </section>
 
-            <!-- work section-->
-            <section class="work flex-row"> 
-                <div>
-                    <h2 >
-                        Work
-                    </h2>
+             <!-- Work section -->
+            <section id="work" class="work sections"> 
+                <div class="h2-header"> <!-- h2 Heading for work section -->
+                    <h2>Work</h2>
                 </div>
-                <div class="work-img">
-                    <div class="work-img-1 flex-row">
-                        <img src="./assets/images/DANIELLE.png"/>
-                        <h3>Image 1 Title</h3>
+
+                <div class="work-images left-border">
+                    <div class="img-row-1 rows"> <!-- row 1 of the work images section to display SINGLE image -->                        
+                       <div class="img-and-caption">
+                            <a href="#"><img src="assets/images/surf_report.jpg" /></a>
+                            <div class="caption">
+                                <h3>Surf Report</h3>
+                                <h6>MERN Stack</h6>
+                            </div>
+                        </div>                      
                     </div>
 
-                    <div class="work-img-2 flex-row">
-                        <img src="./assets/images/DANIELLE.png"/>
-                        <h3>Image 2 Title</h3>
+                    
+
+                    <div class="img-row-2 rows"> <!-- row 2 of the work images section to display TWO image -->                        
+                        <div class="img-and-caption">
+                            <a href="#"><img src="assets/images/Horiseon.jpg" /></a>
+                            <div class="caption">
+                                <h3>Horiseon</h3>
+                                <h6>HTML/CSS</h6>
+                            </div>
+                        </div>
+                        
+                        <div class="img-and-caption"">
+                            <a href="#"><img src="assets/images/robot_gladiators.jpg" /></a>
+                            <div class="caption">
+                                <h3>Robot Gladiators</h3>
+                                <h6>JavaScript</h6>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="work-img-3 flex-row">
-                        <img src="./assets/images/DANIELLE.png"/>
-                        <h3>Image 3 Title</h3>
+
+                    <div class="img-row-3 rows"> <!-- row 3 of the work images section to display TWO image -->
+                        <div class="img-and-caption">
+                            <a href="#"><img src="assets/images/portfolio.jpg" /></a>
+                            <div class="caption">
+                                <h3>Portfolio</h3>
+                                <h6>Advanced CSS</h6>
+                            </div>                            
+                        </div>
+
+                        <div class="img-and-caption">
+                            <a href="#"><img src="assets/images/run_buddy.jpg" /></a>
+                            <div class="caption">
+                                <h3>Run Buddy</h3>
+                                <h6>HTML/CSS</h6>
+                            </div>
+                        </div>                        
                     </div>
 
-                    <div class="work-img-4 flex-row">
-                        <img src="./assets/images/DANIELLE.png"/>
-                        <h3>Image 4 Title</h3>
-                    </div>
-
-                    <div class="work-img-5 flex-row">
-                        <img src="./assets/images/DANIELLE.png"/>
-                        <h3>Image 5 Title</h3>
-                    </div>                    
-                </div>                
+                </div>
             </section>
 
-            <!-- contact section-->
-            <section class="contact-me flex-row">
-                <div>
-                    <h2>
-                        Contact Me
-                    </h2>
+             <!-- Contact me section -->
+            <section id="contact-me" class="contact-me sections"> 
+                <div class="h2-header"> <!-- h2 Heading for contact me section -->
+                    <h2>Contact Me</h2>
                 </div>
 
-                <div class="contact-links">
+                <div class="contact-links left-border"> <!-- links to employee's contact information -->
                     <ul>
                         <li>
                             <a href="#">555.555.5555</a>                        
@@ -120,5 +143,6 @@
             </section>
 
         </section>
+
     </body>
 </html>

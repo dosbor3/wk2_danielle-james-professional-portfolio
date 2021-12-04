@@ -1,7 +1,7 @@
 :root {
     --light-gray: rgba(238,237,246,255);
-    --gray: rgba(72,87,116,255);
-    --teal: rgba(158,202,205,255);
+    --gray: rgba(44,93,169,255);
+    --teal: rgba(202,235,237,255);
     --charcoal: rgba(49,52,60,255);
 }
 
@@ -85,91 +85,164 @@ header nav ul li a {
     margin: 20px;
 }
 /* HERO STYLES END */
+/* UTILITY CLASSES START */
+.left-border {
+    border-left: 5px solid var(--gray);
+    padding: 25px;
+}
 
-/* TITLE SECTIONS STYLES START */
-.title-sections {
+/* EMPLOYEE INFO STYLES START */
+.employee-info{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.title-sections h2 {
-    font-family: Arial, Helvetica, sans-serif;    
-    font-size: 48px;
-    color: var(--gray);    
-    border-right: 4px solid;        
-    margin: auto 15px;
-    padding: 0 10px 25px 40px;
-    text-align: right;
-    margin-bottom: 30px;       
- }
- /* TITLE SECTIONS STYLES END */
-
- /* UTILITY CLASSES STYLES START */
-.flex-row {
-    display: inline-flex;    
     justify-content: space-between;
-    align-items: flex-start; 
-    flex-direction: row;       
-            
+    flex-wrap: wrap;
+    width: 100%;
 }
- /* UTILITY CLASSES STYLES END */
+ /* EMPLOYEE INFO STYLES END */
+
+  /* SECTIONS STYLES START */
+ .sections {
+     width: 100%;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+ }
+
+ .sections h2{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gray);
+    justify-content: center;
+    text-align: right;
+    padding: 25px;    
+ }
+/* SECTIONS STYLES END*/
 
 /* ABOUT ME STYLES START */
- .about-me p {
-    color: var(--gray);
-    font-size: 16px;    
-    margin: 0 0 10px 15px;     
-    text-align: left;  
+.about-me div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+}
+.about-me p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--charcoal);
     line-height: 1.5;
- }
+    text-align: left;
+    margin-bottom: 20px;
+    align-items:center;
+    width: 80%;
+} 
 /* ABOUT ME STYLES END */
 
 /* WORK STYLES START */
-
-.work section {
-    border-left: 4px solid;
+.work {
+    justify-content: flex-start;
 }
 
- .work h3 {
-    display:inline-flex; 
-    border-right: 0;     
-    padding-right: 5px;
+.work h2{
     margin-right: 0;
-    justify-content: center;
+    text-align: right;
+}
+
+.work div img {
+     width: 500px;
+     height: 150px;
+     opacity: 0.83;
  }
 
- .work-img {
+ .work-images {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     padding: 15px;
+     margin: 20px;
+ }
+
+ .rows {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;         
+    padding: 25px;
+    padding-left: 0; 
+    flex: 24 100%;    
  }
 
- .work-img-1 {
-    flex: 9999 80%;
+ .img-row-1 {
     max-width: 100%;
-    justify-content: center;
-    margin-bottom: 35px;
+    flex: 9999 100%;
+
  }
 
- .work-img-2 .work-img-3 {
-    flex: 9 100%;
-    max-width: 50%;
-    justify-content: space-between;
-    align-items: flex-start;   
+ .img-and-caption {
+     padding: 25px;
  }
-
- .work-img-4 .work-img-5 {
-    flex: 8 100%;
-    max-width: 50%;
-    justify-content: space-between;
-    align-items: flex-end;
- }
-
  
+ .img-and-caption img {
+     border: 5px solid var(--teal);
+ }
+
+  div .caption { /* WHAT IS THE PROPER SYNTAX */
+    z-index: 2;
+    position: relative;
+    width: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--charcoal);
+    text-align: left;
+    background-color: var(--teal);    
+  } 
 /* WORK STYLES END */
+
+/* CONTACT ME STYLES START */
+.contact-me {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+}
+
+div.contact-me {
+    width: 20%;
+}
+
+#contact-me h2 {
+    font-size: 40px;
+    margin-right: 0;    
+    text-align: right;  
+}
+
+.contact-links ul {
+    display: flex;   
+    width: 100%;    
+}
+
+.contact-links li {
+    padding: 25px;
+    justify-content: space-between; 
+    align-items: center;
+    list-style: none; 
+}
+
+.contact-links a {
+    text-decoration: none;
+    color:var(--gray);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+    
+/* CONTACT ME STYLES END */
+
+/* PSEUDO CLASSES START */
+.work-images a:hover{
+    opacity: 0.53;
+
+}
+/* PSEUDO CLASSES END */
+
+
  
 
 
