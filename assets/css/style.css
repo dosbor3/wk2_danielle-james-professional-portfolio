@@ -3,6 +3,24 @@
     --gray: rgba(44,93,169,255);
     --teal: rgba(202,235,237,255);
     --charcoal: rgba(49,52,60,255);
+    --pink: rgba(245,239,243,255);
+    --blue: rgba(0,142,213,255);
+    --aqua: rgba(109,141,202,255);
+    --white: rgba(255,255,255,255);
+
+    /* SCSS RGB */
+    --gulf-blue: rgb(2, 7, 17);
+    --science-blue: rgba(7,86,213,1);
+    --viola: rgba(197,125,195,1);
+    --black-pearl: rgba(5,13,30,1);
+    --dodger-blue: rgb(240, 244, 247);
+    --smalt: rgba(5,54,152,1);
+    --east-bay: rgba(84,69,121,1);
+    --waikawa-gray: rgba(86,103,153,1);
+    --venice-blue: rgba(7,68,128,1);
+
+    /*  fonts */
+    --verdana: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*  Removing browser-enforced styles applied to the margin and padding properties of every element
@@ -14,14 +32,14 @@
 }
 
 body {
-    background-color: var(--light-gray);
+    background-color: var(--dodger-blue);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER & NAV STYLES START */
 header {
     padding: 40px 35px 10px 35px;
-    background-color: var(--charcoal);
+    background-color: var(--waikawa-gray);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;    
@@ -30,19 +48,17 @@ header {
 
 
 header h1 {
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: var(--verdana);    
     font-size: 36px;    
     text-align: left;
-    background-color: var(--teal);
-    justify-content: start; 
-    color: var(--charcoal);
-    text-decoration: none;
+    justify-content: start;   
     padding: 5px 5px 5px 45px;    
 }
 
-header a{
+header a {
     text-decoration: none;
-    color:var(--charcoal);    
+    color: var(--white);
+    font-size: 48px;
 }
 
 header nav {
@@ -61,8 +77,8 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    color: var(--teal);
-    text-decoration: underline;
+    color: var(--white);
+    text-decoration: none;
     text-decoration-thickness: 3px;
 }
 /* HEADER & NAV STYLES END */
@@ -76,19 +92,22 @@ header nav ul li a {
     justify-content: right;    
     align-items: flex-end;     
     background-position: 80%;
-    height: 200px;    
+    height: 400px;    
 }
 
 .hero h2 {
-    background-color: var(--teal);
+    background-color: var(--pink);
+    color: var(--gray);
     padding: 10px;
     margin: 20px;
+    font-size: 48px;
 }
 /* HERO STYLES END */
 /* UTILITY CLASSES START */
 .left-border {
-    border-left: 5px solid var(--gray);
+    border-left: 15px double var(--gray);
     padding: 25px;
+    margin: 40px 0;
 }
 
 /* EMPLOYEE INFO STYLES START */
@@ -110,12 +129,13 @@ header nav ul li a {
  }
 
  .sections h2{
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 54px;
+    font-family: var(--verdana);
     color: var(--gray);
     justify-content: center;
     text-align: right;
-    padding: 25px;    
+    padding: 25px; 
+    width: max-content;   
  }
 /* SECTIONS STYLES END*/
 
@@ -127,8 +147,8 @@ header nav ul li a {
     margin-top: 25px;
 }
 .about-me p {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-family:var(--verdana);
     font-weight: bold;
     color: var(--charcoal);
     line-height: 1.5;
@@ -140,77 +160,55 @@ header nav ul li a {
 /* ABOUT ME STYLES END */
 
 /* WORK STYLES START */
-.work {
-    justify-content: flex-start;
+.work-h2 {
+    padding-right: 105px;
 }
 
-.work h2{
-    margin-right: 0;
-    text-align: right;
-}
-
-.work div img {
-     width: 500px;
-     height: 150px;
-     opacity: 0.83;
- }
-
- .work-images {
+.work-images {
      display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     padding: 15px;
-     margin: 20px;
+     justify-content: space-between;     
+     flex-wrap: wrap;     
+     margin: 0 20px;
  }
-
- .rows {
-    display: flex;
-    padding: 25px;
-    padding-left: 0; 
-    flex: 24 100%;    
- }
-
- .img-row-1 {
-    max-width: 100%;
-    flex: 9999 100%;
-
- }
-
+ 
  .img-and-caption {
-     padding: 25px;
+     padding: 25px;     
  }
  
  .img-and-caption img {
-     border: 5px solid var(--teal);
+     border: 5px solid var(--smalt);
+     width: 750px;
+     height: 300px;
+     opacity: 0.83;
  }
 
   div .caption { /* WHAT IS THE PROPER SYNTAX */
     z-index: 2;
     position: relative;
     width: 25%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--verdana);
     color:var(--charcoal);
     text-align: left;
     background-color: var(--teal);    
   } 
+
+  .flex-img {
+      flex: 9999 100%;
+  }
 /* WORK STYLES END */
 
 /* CONTACT ME STYLES START */
 .contact-me {
     width: 80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: 25px;
 }
 
-div.contact-me {
-    width: 20%;
-}
-
 #contact-me h2 {
-    font-size: 40px;
-    margin-right: 0;    
-    text-align: right;  
+    font-size: 35px;       
+    text-align: right;
+    padding-right: 67px;    
 }
 
 .contact-links ul {
@@ -229,7 +227,7 @@ div.contact-me {
     text-decoration: none;
     color:var(--gray);
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--verdana);
     font-weight: bold;
 }
     
