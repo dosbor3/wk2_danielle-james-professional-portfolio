@@ -11,12 +11,12 @@
     /* SCSS RGB */
     --gulf-blue: rgb(2, 7, 17);
     --science-blue: rgba(7,86,213,1);
-    --viola: rgba(197,125,195,1);
+    --viola: rgba(209, 196, 209, 0.103);
     --black-pearl: rgba(5,13,30,1);
-    --dodger-blue: rgb(240, 244, 247);
+    --dodger-blue: rgb(255, 255, 255);
     --smalt: rgba(5,54,152,1);
-    --east-bay: rgba(84,69,121,1);
-    --waikawa-gray: rgba(86,103,153,1);
+    --east-bay: rgb(175, 168, 194);
+    --waikawa-gray: rgb(163, 197, 240);
     --venice-blue: rgba(7,68,128,1);
 
     /*  fonts */
